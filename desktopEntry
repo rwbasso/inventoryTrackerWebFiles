@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+	
+	<img src="bassoLogo.jpg" alt="bassoLogo" height="100" width="250">
+
+<h1> Enter the Steel Run Below</h1>
+	
+<form class="form-horizontal" role ="form" action="insert.php" method="post">
+
+<div class="form-group">
+
+<label class="control-label col-sm-2" for="workOrder">Work Order:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="workOrder" placeholder="Enter Workorder Number" name="workOrder" required/>
+</div>
+
+<label class="control-label col-sm-2" for="empId">Employee ID:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="empId" placeholder="Enter Employee ID" name="empId" required/>
+</div>
+
+<label class="control-label col-sm-2" for="machineNo">Machine Number:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="machineNo" placeholder="Enter Machine Number" name="machineNo"required/>
+</div>
+
+<label class="control-label col-sm-2" for="postdate">Date:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="postdate" placeholder="Enter Date" name="postdate" required/>
+</div>
+
+<label class="control-label col-sm-2" for="partA">Part A:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="partA" placeholder="Enter Amount of Part A" name="partA" required/>
+</div>
+
+<label class="control-label col-sm-2" for="partB">Part B:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="partB" placeholder="Enter Amount of Part B" name="partB" required/>
+</div>
+
+<label class="control-label col-sm-2" for="bar1">Bar 1:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="bar1" placeholder="Enter Amount of Bar 1" name="bar1"required/>
+</div>
+
+<label class="control-label col-sm-2" for="bar2">Bar 2:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="bar2" placeholder="Enter Amount of Bar 2" name="bar2"required/>
+</div>
+
+<label class="control-label col-sm-2" for="scrap">Scrap:</label>
+<div class="col-sm-4">
+<input type="number" class="form-control" id="scrap" placeholder="Enter Amount of Scrap" name="scrap" required/>
+</div>
+
+   
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-lg btn-success">Submit Run</button>
+    </div>
+		 <div class="col-sm-12">
+	<button class="btn btn-sm btn-danger" type="reset">Reset</button>
+	</div>
+	
+</form>
+
+
+<!--<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Press a button!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>  -->  
+</div>
+</body>
+</html>                                		
