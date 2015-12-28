@@ -1,0 +1,78 @@
+<html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+<style>
+body {
+	background-color:#5575e8;
+	color:white;
+	
+	}
+</style>
+
+<body>
+
+
+<?php
+ define('DB_HOST', 'localhost');
+ define('DB_NAME', 'inventory'); 
+ define('DB_USER','basso1'); 
+ define('DB_PASSWORD','Nate2008'); 
+ $con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error());
+ $db=mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error());
+ 
+ function SignIn() 
+ { session_start();
+ //starting the session for user profile page
+ if(!empty($_POST['emp'])) //checking the 'user' name which is from Sign-In.html, is it empty or have some text
+ { $query = mysql_query("SELECT * FROM employee where empId = '$_POST[emp]' AND password = '$_POST[pass]'") or die(mysql_error());
+ $row = mysql_fetch_array($query) or die(mysql_error());
+ 
+ if(!empty($row['empId']) AND !empty($row['password']))
+	 { 
+ $_SESSION['empId'] = $row['password']; echo "<h3>SUCCESSFUL LOG IN</h3>";
+ } 
+ else
+	 { 
+ echo "Contact Help Desk"; 
+ }
+ }
+ } if(isset($_POST['submit'])) 
+ {
+	 SignIn();
+	 }
+ ?>
+<br>
+<br>
+    <div class="container">
+	
+ <form> 
+<input type=button class="btn btn-success"
+value="START RUN ENTRY"
+onClick="self.location='mobile.html'"></span>
+</form>
+ 
+ <br>
+ <br>
+  <form> 
+<input type=button class="btn"
+value="Alternate Desktop Entry"
+onClick="self.location='desktopEntry.html'"></span>
+</form>
+<br>
+<br>
+
+  <form> 
+<input type=button class="btn"
+value="Run Results"
+onClick="self.location='minedata.php'"></span>
+</form>
+
+
+
+  
+</body>
+</html>
