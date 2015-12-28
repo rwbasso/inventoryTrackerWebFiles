@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Internal Web Log In</title>
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    <link href="sticky-footer.css" rel="stylesheet">
+
+
+
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+	
+	<div id="Sign-In"> 
+<br>
+ <form method="POST" action="connectivity.php"> Employee ID <br><input type="text" name="emp" size="40">
+ <br> Password <br>
+ <input type="password" name="pass" size="40">
+ <br> <br>
+ <input id="button" class="btn btn-primary btn-lg" type="submit" name="submit" value="Log-In"> </form> </fieldset>
+ </div>
+
+
+    </div> <!-- /container -->
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  
+
+</html>
